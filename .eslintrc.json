@@ -18,8 +18,9 @@
     "rules": {
         "indent": [
             "error",
-            4
+            2
         ],
+
         "linebreak-style": [
             "error",
             "unix"
@@ -31,6 +32,11 @@
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            { "max": 1 }
+        ],
+        "camelcase": "off"
     }
 }
