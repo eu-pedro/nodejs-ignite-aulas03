@@ -37,6 +37,7 @@
             "error",
             { "max": 1 }
         ],
-        "camelcase": "off"
+        "camelcase": "off",
+        "space-before-function-paren": ["error", "always"]
     }
 }
