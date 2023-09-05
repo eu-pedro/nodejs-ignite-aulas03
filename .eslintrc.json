@@ -38,6 +38,7 @@
             { "max": 1 }
         ],
         "camelcase": "off",
-        "space-before-function-paren": ["error", "always"]
+        "space-before-function-paren": ["error", "always"],
+        "object-property-newline": ["error", { "allowAllPropertiesOnSameLine": false }]
     }
 }
