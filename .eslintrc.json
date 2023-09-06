@@ -39,6 +39,7 @@
         ],
         "camelcase": "off",
         "space-before-function-paren": ["error", "always"],
-        "object-property-newline": ["error", { "allowAllPropertiesOnSameLine": false }]
+        "object-property-newline": ["error", { "allowAllPropertiesOnSameLine": false }],
+        "@typescript-eslint/no-explicit-any": "off"
     }
 }
