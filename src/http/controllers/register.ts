@@ -5,11 +5,11 @@ import { FastifyReply, FastifyRequest } from 'fastify';
 import { z } from 'zod';
 
 export async function register (request: FastifyRequest, reply: FastifyReply) {
-  const registerBodySchema = z.object( {
+  const registerBodySchema = z.object({
     name: z.string(),
     email: z.string().email(),
     password: z.string().min(6)
-  } );
+  });
 
   // $2a$06$S3xD4knSI24XirDP7nt6h.2wntsommCjEdtwJZmq8v0pgGCrVREAW
 
