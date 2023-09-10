@@ -7,8 +7,8 @@ Gympass style app.
 # É o que é possível o usuário fazer na aplicação, exemplo
 # É possível que o usuário faça check-in na aplicação!
 
-- [ ] Deve ser possível se cadastrar;
-- [ ] Deve ser possível se autenticar;
+- [x] Deve ser possível se cadastrar;
+- [x] Deve ser possível se autenticar;
 - [ ] Deve ser possível obter o perfil de um usuário logado;
 - [ ] Deve ser possível obter o número de check-ins realizados pelo usuário logado;
 - [ ] Deve ser possível o usuário obter seu histórico de check-ins;
