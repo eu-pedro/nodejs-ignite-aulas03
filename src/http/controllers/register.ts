@@ -21,6 +21,7 @@ export async function register (request: FastifyRequest, reply: FastifyReply) {
       email,
       password});
   } catch (error) {
+    console.log('entrou');
     if(error instanceof UserAlreadyExistsError){
       return reply.status(409).send({message: error.message});
     }
