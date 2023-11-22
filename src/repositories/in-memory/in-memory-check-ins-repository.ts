@@ -27,7 +27,7 @@ export class InMemoryCheckInsRepository implements CheckInsRepository {
   private items: CheckIn[] = [];
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  findByUserIdOnDate (userId: string, date: Date) {
+  async findByUserIdOnDate (userId: string, date: Date) {
 
     const startOfTheDay = dayjs(date).startOf('date');
     const endOfTheDay = dayjs(date).endOf('date');

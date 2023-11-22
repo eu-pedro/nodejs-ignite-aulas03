@@ -7,9 +7,9 @@ export async function create (request: FastifyRequest, reply: FastifyReply) {
     title: z.string(),
     description: z.string().nullable(),
     phone: z.string().nullable(),
-    latitude: z.number().refine((value) => Math.abs(value) <= 90
+    latitude: z.coerce.number().refine((value) => Math.abs(value) <= 90
     ),
-    longitude: z.number().refine((value) => Math.abs(value) <= 180),
+    longitude: z.coerce.number().refine((value) => Math.abs(value) <= 180),
   });
 
   // $2a$06$S3xD4knSI24XirDP7nt6h.2wntsommCjEdtwJZmq8v0pgGCrVREAW
