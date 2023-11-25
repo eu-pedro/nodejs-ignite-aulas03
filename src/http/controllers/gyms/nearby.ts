@@ -18,7 +18,6 @@ export async function nearby (request: FastifyRequest, reply: FastifyReply) {
     userLongitude: longitude
   });
 
-  console.log(gyms);
 
   return reply.status(200).send({
     gyms

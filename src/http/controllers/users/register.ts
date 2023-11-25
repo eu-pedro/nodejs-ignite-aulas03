@@ -9,11 +9,10 @@ export async function register (request: FastifyRequest, reply: FastifyReply) {
     email: z.string().email(),
     password: z.string().min(6)
   });
-
   // $2a$06$S3xD4knSI24XirDP7nt6h.2wntsommCjEdtwJZmq8v0pgGCrVREAW
 
   const { email, name, password } = registerBodySchema.parse(request.body);
-
+  console.log(email, name, password);
   try {
     const registerUseCase = makeRegisterUseCase();
 
@@ -21,7 +20,6 @@ export async function register (request: FastifyRequest, reply: FastifyReply) {
       email,
       password});
   } catch (error) {
-    console.log('entrou');
     if(error instanceof UserAlreadyExistsError){
       return reply.status(409).send({message: error.message});
     }
